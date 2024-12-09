@@ -1,0 +1,22 @@
+<style>
+   table, th, td {
+   border: 1px solid black;
+   }
+</style>
+<h1>Welcome to Healthy Bites</h1>
+<table style="width: 100%">
+   <thead>
+      <th>Name</th>
+      <th>Category</th>
+      <th>Quantity</th>
+   </thead>
+   <tbody>
+      {% for row in data %}
+      <tr>
+         <td>{{ row.name }}</td>
+         <td>{{ row.category }}</td>
+         <td>{{ row.quantity }}</td>
+      </tr>
+      {% endfor %}
+   </tbody>
+</table>
